@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-<script src="/script.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- Logo -->
+		<div id="header">
+			<div id="bakeryLogo">
+				<img src="./assets/cake.png" alt="" id="logo" />
+				<p id="bakeryName">Cake World</p>
+			</div>
+		</div>
+
+		<div class="container">
+			<!-- Menu with cost of each flavour -->
+			<div id="menu">
+				<h3>Prices</h3>
+				<p class="flavour">Chocolate------300</p>
+				<p class="flavour">Strawberry-----100</p>
+				<p class="flavour">Butterscotch---200</p>
+				<p class="flavour">Vanilla---------250</p>
+				<p class="flavour">RedVelvet-----350</p>
+			</div>
+
+			<div id="cake">
+				<p><img src="./assets/candle.png" alt="candles" id="candles" /></p>
+				<p class="cakeLayer" id="chocolate"></p>
+				<p class="cakeLayer" id="strawberry"></p>
+				<p class="cakeLayer" id="butterscotch"></p>
+				<p class="cakeLayer" id="vanilla"></p>
+				<p class="cakeLayer" id="redVelvet"></p>
+			</div>
+
+			<div id="bill">
+				<h3>Bill</h3>
+				<p class="flavour">Chocolate------300</p>
+				<p class="flavour">Strawberry-----100</p>
+				<p class="flavour">Butterscotch---200</p>
+				<p class="flavour">Vanilla--------250</p>
+				<p class="flavour">RedVelvet------350</p>
+				<p id="totalBill">Total ----- 1200</p>
+			</div>
+		</div>
+
+		<!-- Buttons to select flavour -->
+		<div id="footer">
+			<button class="btnItem active" id="btn-chocolate">Chocolate</button>
+			<button class="btnItem active" id="btn-strawberry">Strawberry</button>
+			<button class="btnItem active" id="btn-butterscotch">Butterscotch</button>
+			<button class="btnItem active" id="btn-vanilla">Vanilla</button>
+			<button class="btnItem active" id="btn-redVelvet">Red Velvet</button>
+
+			<button class="btnItem" id="btn-buy">BUY</button>
+		</div>
+	</body>
+	<script src="/script.js"></script>
 </html>
