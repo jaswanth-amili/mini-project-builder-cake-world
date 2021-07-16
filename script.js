@@ -9,11 +9,11 @@ var flavours = {
 
 // state of each layer in the cake
 var state = {
-	chocolate: true,
-	strawberry: true,
-	butterscotch: true,
-	vanilla: true,
-	redVelvet: true,
+	chocolate: false,
+	strawberry: false,
+	butterscotch: false,
+	vanilla: false,
+	redVelvet: false,
 };
 
 function renderAll() {
@@ -143,5 +143,7 @@ buyBtn.onclick = function () {
 	bool = true;
 };
 
-//
-// }
+//Render cake layers on window load
+window.onload = function () {
+	renderAll();
+};
